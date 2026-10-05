@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Venkata Santosh Saran Nagineni | Mechanical &amp; Materials R&amp;D Engineer</title>
+<meta name="description" content="Portfolio of Venkata Santosh Saran Nagineni, mechanical and materials R&amp;D engineer in Copenhagen: metal additive manufacturing, heat treatment, mechanical testing and failure analysis.">
+<meta name="author" content="Venkata Santosh Saran Nagineni">
+<meta name="theme-color" content="#0e1330">
+<link rel="canonical" href="https://venkatasantoshsaran99-ux.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Venkata Santosh Saran Nagineni | Mechanical &amp; Materials R&amp;D Engineer">
+<meta property="og:description" content="Metal additive manufacturing, heat treatment, mechanical testing and failure analysis. MSc TU Freiberg, thesis at DTU with Norsk Hydro.">
+<meta property="og:url" content="https://venkatasantoshsaran99-ux.github.io/">
+<meta property="og:image" content="https://venkatasantoshsaran99-ux.github.io/assets/profile.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%230ea5e9'/%3E%3Cstop offset='1' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='26' text-anchor='middle' fill='white'%3EVS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#f8faff;--ink:#0e1330;--card:#ffffff;
+  --g1:#0ea5e9;--g2:#2563eb;--g3:#7c3aed;--g4:#c026d3;
+  --grad:linear-gradient(90deg,#0ea5e9,#2563eb,#7c3aed,#c026d3);
+  --shadow:0 4px 32px rgba(30,41,99,.10),0 1px 4px rgba(30,41,99,.06);
+  --border:1px solid rgba(79,70,229,.14);--r:22px;
+  --muted:rgba(14,19,48,.68);
+}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font-family:'Sora',system-ui,sans-serif;font-weight:300;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:radial-gradient(ellipse 60% 50% at 0% 0%,rgba(14,165,233,.09) 0%,transparent 70%),
+             radial-gradient(ellipse 50% 40% at 100% 100%,rgba(192,38,211,.07) 0%,transparent 70%)}
+a:focus-visible,button:focus-visible{outline:2px solid #2563eb;outline-offset:3px;border-radius:6px}
+
+/* PRELOADER (only shown when JS runs) */
+#preloader{position:fixed;inset:0;z-index:9999;background:#0e1330;display:none;flex-direction:column;align-items:center;justify-content:center;gap:24px}
+.js #preloader{display:flex}
+.pre-pct{font-size:clamp(72px,15vw,160px);font-weight:800;letter-spacing:-0.04em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1}
+.pre-bar-wrap{width:280px;height:2px;background:rgba(255,255,255,.12);border-radius:2px;overflow:hidden}
+.pre-bar{height:100%;width:0%;background:var(--grad);border-radius:2px;transition:width .04s linear}
+.pre-label{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+.curtain{position:fixed;inset:0;z-index:9998;pointer-events:none;display:none}
+.js .curtain{display:block}
+.curtain-top,.curtain-bot{position:absolute;left:0;right:0;height:50%;background:#0e1330;transition:transform 1s cubic-bezier(.77,0,.175,1)}
+.curtain-top{top:0}.curtain-bot{bottom:0}
+.curtain.open .curtain-top{transform:translateY(-100%)}
+.curtain.open .curtain-bot{transform:translateY(100%)}
+
+/* SCROLL BAR */
+#scroll-bar{position:fixed;top:0;left:0;height:3px;background:var(--grad);z-index:9990;width:0%}
+
+/* NAVBAR */
+nav{position:fixed;top:0;left:0;right:0;z-index:900;padding:0 5%;height:68px;display:flex;align-items:center;justify-content:space-between;transition:background .4s,box-shadow .4s}
+nav.scrolled{background:rgba(248,250,255,.9);backdrop-filter:blur(20px);box-shadow:0 2px 20px rgba(30,41,99,.08)}
+.nav-logo{font-size:15px;font-weight:800;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink);text-decoration:none;opacity:.55;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+.nav-toggle{display:none;background:none;border:1.5px solid rgba(37,99,235,.3);border-radius:10px;padding:8px 12px;font:600 12px 'Sora',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#2563eb;cursor:pointer}
+
+/* HERO */
+#hero{min-height:100vh;display:flex;align-items:center;padding:120px 5% 80px;position:relative;overflow:hidden}
+.hero-watermark{position:absolute;left:-2%;top:50%;transform:translateY(-50%);font-size:clamp(100px,16vw,240px);font-weight:800;letter-spacing:-0.06em;color:transparent;-webkit-text-stroke:1px rgba(37,99,235,.06);white-space:nowrap;pointer-events:none;user-select:none;will-change:transform}
+.hero-left{flex:1;max-width:640px;z-index:1}
+.hero-eyebrow{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#2563eb;margin-bottom:28px;display:flex;align-items:center;gap:12px}
+.hero-eyebrow::before{content:'';display:inline-block;width:32px;height:2px;background:var(--grad);border-radius:2px;flex-shrink:0}
+.hero-name{font-size:clamp(36px,5.5vw,74px);font-weight:800;letter-spacing:-0.04em;line-height:1.0;margin-bottom:6px}
+.hero-name-line2{display:block;background:var(--grad);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gradshift 4s linear infinite}
+@keyframes gradshift{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+.hero-word{display:inline-block;white-space:nowrap}
+.hero-char{display:inline-block;opacity:0;transform:translateY(40px) rotate(8deg);transition:opacity .5s,transform .5s}
+.hero-char.vis{opacity:1;transform:none}
+.hero-value{font-size:clamp(14px,1.5vw,17px);line-height:1.75;margin:28px 0 40px;color:var(--muted);max-width:540px}
+.hero-value strong{color:var(--ink);font-weight:700}
+.hl{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-weight:700}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:52px}
+.btn-primary{padding:14px 32px;border-radius:100px;background:var(--grad);color:#fff;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:none;text-decoration:none;display:inline-flex;align-items:center;gap:8px;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;box-shadow:0 4px 20px rgba(37,99,235,.35)}
+.btn-primary::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-20deg);transition:left .6s}
+.btn-primary:hover::after{left:150%}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(37,99,235,.45)}
+.btn-secondary{padding:14px 32px;border-radius:100px;background:transparent;border:1.5px solid rgba(37,99,235,.35);color:#2563eb;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .3s}
+.btn-secondary:hover{background:#2563eb;color:#fff;border-color:#2563eb}
+.hero-stats{display:grid;grid-template-columns:repeat(4,auto);justify-content:start}
+.hero-stat{padding:14px 20px;border-left:3px solid transparent}
+.hero-stat:nth-child(1){border-image:linear-gradient(to bottom,#0ea5e9,#2563eb) 1}
+.hero-stat:nth-child(2){border-image:linear-gradient(to bottom,#2563eb,#7c3aed) 1}
+.hero-stat:nth-child(3){border-image:linear-gradient(to bottom,#7c3aed,#c026d3) 1}
+.hero-stat:nth-child(4){border-image:linear-gradient(to bottom,#c026d3,#0ea5e9) 1}
+.stat-num{font-size:28px;font-weight:800;letter-spacing:-0.04em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(14,19,48,.5);margin-top:2px}
+.hero-right{position:relative;flex-shrink:0;z-index:1;margin-left:60px}
+.photo-wrap{position:relative;width:340px;height:340px;display:flex;align-items:center;justify-content:center;margin-bottom:80px}
+.photo-glow{position:absolute;inset:-20px;border-radius:50%;background:conic-gradient(from 0deg,#0ea5e9,#2563eb,#7c3aed,#c026d3,#0ea5e9);animation:spin 6s linear infinite;filter:blur(16px);opacity:.45}
+.photo-ring{position:absolute;inset:-8px;border-radius:50%;border:2px dashed rgba(124,58,237,.28);animation:spin 12s linear infinite reverse}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.photo-img{width:260px;height:260px;border-radius:50%;border:6px solid #fff;box-shadow:var(--shadow);position:relative;z-index:2;object-fit:cover;object-position:center top;background:#e0e7ff}
+.photo-orbit{position:absolute;width:100%;height:100%;animation:spin 8s linear infinite;z-index:3}
+.orbit-dot{position:absolute;width:12px;height:12px;border-radius:50%;background:var(--grad);box-shadow:0 0 12px #2563eb}
+.orbit-dot:nth-child(1){top:0;left:50%;transform:translate(-50%,-50%)}
+.orbit-dot:nth-child(2){bottom:12%;right:4%;transform:translate(50%,50%)}
+.orbit-dot:nth-child(3){bottom:12%;left:4%;transform:translate(-50%,50%)}
+
+/* MARQUEE */
+.mq-section{padding:0;margin:20px 0;overflow:hidden;transform:rotate(-1.2deg);position:relative;z-index:1}
+.mq-inner{display:flex;white-space:nowrap;animation:mq-anim 22s linear infinite}
+.mq-inner.rev{animation-direction:reverse}
+.mq-inner:hover{animation-play-state:paused}
+.mq-track{display:flex;align-items:center;padding:14px 0;font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.mq-track.fill{background:var(--grad)}
+.mq-track.outline{border-top:1.5px solid rgba(37,99,235,.14);border-bottom:1.5px solid rgba(37,99,235,.14)}
+.mq-item{padding:0 28px;color:rgba(255,255,255,.95)}
+.mq-track.outline .mq-item{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.mq-sep{padding:0 6px;color:rgba(255,255,255,.5)}
+.mq-track.outline .mq-sep{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+@keyframes mq-anim{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+section{padding:100px 5%;position:relative;z-index:1}
+.sec-eyebrow{font-size:11px;letter-spacing:.35em;text-transform:uppercase;color:#2563eb;margin-bottom:16px;display:flex;align-items:center;gap:12px}
+.sec-eyebrow::before{content:'';display:inline-block;width:24px;height:2px;background:var(--grad);border-radius:2px}
+.sec-title{font-size:clamp(30px,4.5vw,54px);font-weight:800;letter-spacing:-0.04em;line-height:1.05;margin-bottom:24px}
+.sec-title .g{background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.sec-title .it{font-style:italic}
+.sec-lede{font-size:15px;line-height:1.8;color:var(--muted);max-width:640px;margin-bottom:56px}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:40px}
+.quote-card{background:var(--card);border:var(--border);border-radius:var(--r);padding:40px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.quote-card::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.qmark{font-size:80px;line-height:.8;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:block;margin-bottom:16px;opacity:.45}
+.qtext{font-size:17px;line-height:1.8;color:rgba(14,19,48,.78)}
+.facts{margin-top:28px;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:13px;line-height:1.6}
+.facts dt{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(14,19,48,.45);font-weight:600;padding-top:3px}
+.facts dd{color:var(--ink)}
+.about-r p{font-size:14px;line-height:1.8;color:var(--muted);margin-bottom:18px}
+.about-r p strong{color:var(--ink);font-weight:700}
+.stat-band{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(79,70,229,.1);border-radius:var(--r);overflow:hidden;margin-top:64px}
+.stat-cell{background:white;padding:36px 24px;text-align:center}
+.stat-cell .sn{font-size:40px;font-weight:800;letter-spacing:-0.04em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.stat-cell .sl{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(14,19,48,.5);margin-top:6px;display:block}
+
+/* FOCUS AREAS */
+.focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.focus-card{background:var(--card);border:var(--border);border-radius:var(--r);padding:32px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.focus-card::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.focus-tag{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:#2563eb;font-weight:700;margin-bottom:14px;display:block}
+.focus-card h3{font-size:19px;font-weight:800;letter-spacing:-0.02em;margin-bottom:12px}
+.focus-card p{font-size:13.5px;line-height:1.75;color:var(--muted)}
+
+/* CASE STUDY */
+.case{background:var(--card);border:var(--border);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden;position:relative}
+.case::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.case-top{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;padding:44px}
+.case-org{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(14,19,48,.5);font-weight:600}
+.case-top h3{font-size:clamp(20px,2.4vw,26px);font-weight:800;letter-spacing:-0.02em;margin:12px 0 16px;line-height:1.25}
+.case-top p{font-size:14px;line-height:1.8;color:var(--muted);margin-bottom:14px}
+.spec{background:rgba(37,99,235,.04);border:1px solid rgba(37,99,235,.12);border-radius:16px;padding:24px;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;align-self:start;font-size:13px;line-height:1.6}
+.spec dt{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#2563eb;font-weight:700;padding-top:3px}
+.spec dd{color:var(--ink)}
+.cycle{padding:0 44px 36px}
+.cycle svg{width:100%;height:auto;display:block;max-width:760px}
+.cycle figcaption{font-size:11px;letter-spacing:.06em;color:rgba(14,19,48,.5);margin-top:8px}
+.steps{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(79,70,229,.1)}
+.steps li{padding:28px 32px;border-right:1px solid rgba(79,70,229,.1);border-bottom:1px solid rgba(79,70,229,.1)}
+.steps li:nth-child(3n){border-right:0}
+.steps li:nth-last-child(-n+3){border-bottom:0}
+.step-n{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.steps h4{font-size:16px;font-weight:800;letter-spacing:-0.01em;margin:8px 0}
+.steps p{font-size:13px;line-height:1.7;color:var(--muted)}
+
+/* EXPERIENCE */
+.exp-stack{display:flex;flex-direction:column;gap:32px}
+.exp-card{background:var(--card);border:var(--border);border-radius:var(--r);padding:40px 44px;box-shadow:var(--shadow);position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.exp-card::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.exp-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(30,41,99,.15)}
+.exp-top{display:flex;justify-content:flex-end;margin-bottom:10px}
+.exp-date{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(14,19,48,.5);font-weight:600;background:rgba(37,99,235,.06);padding:6px 14px;border-radius:100px;border:1px solid rgba(37,99,235,.12)}
+.exp-bg-num{font-size:80px;font-weight:800;letter-spacing:-0.04em;color:transparent;-webkit-text-stroke:1.5px rgba(79,70,229,.09);position:absolute;right:36px;bottom:16px;line-height:1;user-select:none;pointer-events:none}
+.exp-role{font-size:clamp(19px,2.5vw,25px);font-weight:800;letter-spacing:-0.02em;margin-bottom:5px}
+.exp-company{font-size:14px;font-weight:700;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:4px}
+.exp-loc{font-size:12px;color:rgba(14,19,48,.5);margin-bottom:20px;letter-spacing:.05em}
+.exp-thesis{font-size:12px;font-weight:600;color:rgba(14,19,48,.6);background:rgba(124,58,237,.05);border:1px solid rgba(124,58,237,.12);border-radius:8px;padding:10px 14px;margin-bottom:20px;font-style:italic}
+.exp-bullets{list-style:none;display:flex;flex-direction:column;gap:10px}
+.exp-bullets li{font-size:14px;line-height:1.7;color:rgba(14,19,48,.72);padding-left:22px;position:relative}
+.exp-bullets li::before{content:'\2192';position:absolute;left:0;color:#2563eb;font-weight:700;font-size:13px}
+.exp-bullets li strong{color:var(--ink);font-weight:700}
+.exp-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.exp-tag{font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;padding:5px 12px;border-radius:100px;background:rgba(37,99,235,.06);color:#2563eb;border:1px solid rgba(37,99,235,.14)}
+.exp-other{margin-top:28px;font-size:13px;color:rgba(14,19,48,.55);line-height:1.7}
+
+/* PROJECTS */
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px}
+.filters button{font:600 11px 'Sora',sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:9px 18px;border-radius:100px;border:1.5px solid rgba(37,99,235,.22);background:#fff;color:#2563eb;cursor:pointer;transition:all .25s}
+.filters button:hover{border-color:#2563eb}
+.filters button[aria-pressed="true"]{background:var(--grad);color:#fff;border-color:transparent}
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.proj{background:var(--card);border:var(--border);border-radius:var(--r);padding:30px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:12px;position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
+.proj::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.proj:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(30,41,99,.14)}
+.proj[hidden]{display:none}
+.proj-org{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:rgba(14,19,48,.5);font-weight:600}
+.proj h3{font-size:17px;font-weight:800;letter-spacing:-0.02em;line-height:1.3}
+.proj p{font-size:13px;line-height:1.7;color:var(--muted)}
+.proj .exp-tags{margin-top:auto;padding-top:8px}
+.proj-empty{font-size:14px;color:var(--muted)}
+
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:48px}
+.skill-card{background:var(--card);border:var(--border);border-radius:var(--r);padding:36px;box-shadow:var(--shadow);position:relative;overflow:hidden;transition:transform .2s}
+.skill-card::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:var(--grad)}
+.sk-glow{position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(37,99,235,.1),transparent 70%);pointer-events:none;transform:translate(-50%,-50%);opacity:0;transition:opacity .3s}
+.sk-num{font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:rgba(14,19,48,.35);font-weight:700;margin-bottom:16px}
+.sk-title{font-size:20px;font-weight:800;letter-spacing:-0.02em;margin-bottom:20px}
+.sk-tags{display:flex;flex-wrap:wrap;gap:8px}
+.sk-tag{font-size:11px;font-weight:600;padding:6px 14px;border-radius:100px;background:rgba(14,19,48,.04);color:rgba(14,19,48,.68);border:1px solid rgba(14,19,48,.09);transition:all .25s}
+.sk-tag:hover{background:var(--grad);color:#fff;border-color:transparent}
+.tools-mq{overflow:hidden;position:relative;margin-top:8px}
+.tools-track{display:flex;gap:12px;animation:mq-anim 25s linear infinite;width:max-content}
+.tools-track:hover{animation-play-state:paused}
+.tool-pill{display:inline-flex;align-items:center;gap:6px;padding:8px 18px;border-radius:100px;background:white;border:var(--border);font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;color:var(--ink);box-shadow:0 2px 8px rgba(30,41,99,.05);flex-shrink:0}
+
+/* EDUCATION */
+.edu-list{display:flex;flex-direction:column;margin-top:40px}
+.edu-row{display:grid;grid-template-columns:140px 1fr auto;gap:24px;align-items:center;padding:28px 0;border-bottom:1px solid rgba(79,70,229,.1);transition:transform .3s}
+.edu-row:hover{transform:translateX(8px)}
+.edu-yr{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:rgba(14,19,48,.45);font-weight:600}
+.edu-deg{font-size:18px;font-weight:800;letter-spacing:-0.02em;margin-bottom:4px}
+.edu-inst{font-size:13px;color:rgba(14,19,48,.55)}
+.edu-mods{font-size:12px;color:rgba(14,19,48,.5);margin-top:6px;line-height:1.6}
+.edu-badge{font-size:22px;font-weight:800;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;white-space:nowrap}
+
+/* BEYOND */
+.beyond-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:40px}
+.beyond-item{padding-top:18px;border-top:3px solid transparent;border-image:var(--grad) 1}
+.beyond-item h4{font-size:17px;font-weight:800;letter-spacing:-0.01em;margin-bottom:8px}
+.beyond-item p{font-size:13.5px;line-height:1.75;color:var(--muted)}
+
+/* CONTACT */
+#contact{text-align:center}
+.lets-talk{font-size:clamp(44px,8vw,112px);font-weight:800;letter-spacing:-0.04em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;display:inline-block;line-height:1.05;margin-bottom:60px}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:860px;margin:0 auto 48px}
+.contact-card{background:var(--card);border:var(--border);border-radius:var(--r);padding:32px 24px;box-shadow:var(--shadow);text-align:center;transition:transform .3s,box-shadow .3s;position:relative;overflow:hidden}
+.contact-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad)}
+.contact-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(30,41,99,.14)}
+.cc-icon{width:44px;height:44px;margin:0 auto 16px;border-radius:12px;background:var(--grad);display:flex;align-items:center;justify-content:center}
+.cc-icon svg{width:22px;height:22px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.cc-type{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:rgba(14,19,48,.45);margin-bottom:8px}
+.cc-val{font-size:13px;font-weight:700;color:var(--ink);word-break:break-all}
+.cc-val a{color:inherit;text-decoration:none}
+.cc-val a:hover{color:#2563eb}
+.open-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(22,163,74,.07);border:1px solid rgba(22,163,74,.2);border-radius:100px;padding:12px 28px;font-size:13px;font-weight:700;color:#15803d}
+.open-dot{width:10px;height:10px;border-radius:50%;background:#22c55e;flex-shrink:0;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(34,197,94,.4)}50%{box-shadow:0 0 0 8px rgba(34,197,94,0)}}
+
+/* FOOTER */
+footer{padding:40px 5%;border-top:1px solid rgba(79,70,229,.09);display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1}
+.foot-name{font-size:14px;font-weight:800;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.foot-note{font-size:11px;letter-spacing:.1em;color:rgba(14,19,48,.45)}
+
+/* REVEAL (content stays visible if JS is off) */
+.js .reveal{opacity:0;transform:translateY(36px);filter:blur(4px);transition:opacity .7s ease,transform .7s ease,filter .7s ease}
+.js .reveal.vis{opacity:1;transform:translateY(0);filter:blur(0)}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
+
+/* WEBGL */
+#bg-canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
+
+/* RESPONSIVE */
+@media(max-width:1100px){
+  .focus-grid,.proj-grid{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .steps li{border-right:1px solid rgba(79,70,229,.1)!important;border-bottom:1px solid rgba(79,70,229,.1)!important}
+  .steps li:nth-child(2n){border-right:0!important}
+  .steps li:nth-last-child(-n+2){border-bottom:0!important}
+  .nav-links{gap:18px}
+}
+@media(max-width:900px){
+  #hero{flex-direction:column;padding:100px 5% 60px;text-align:center}
+  .hero-eyebrow{justify-content:center}
+  .hero-value{margin-left:auto;margin-right:auto}
+  .hero-right{margin:48px auto 0}
+  .hero-ctas{justify-content:center}
+  .hero-stats{justify-content:center;grid-template-columns:repeat(2,auto)}
+  .about-grid,.case-top{grid-template-columns:1fr}
+  .skills-grid{grid-template-columns:1fr}
+  .stat-band{grid-template-columns:repeat(2,1fr)}
+  .contact-grid,.beyond-grid{grid-template-columns:1fr}
+  .nav-toggle{display:block}
+  .nav-links{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;gap:0;background:rgba(248,250,255,.97);backdrop-filter:blur(20px);box-shadow:0 12px 24px rgba(30,41,99,.1);padding:8px 5% 16px}
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:12px 0;opacity:.8}
+  .edu-row{grid-template-columns:1fr;gap:6px}
+  .edu-badge{display:none}
+  .case-top{padding:32px 28px}
+  .cycle{padding:0 28px 28px}
+}
+@media(max-width:640px){
+  .focus-grid,.proj-grid,.steps{grid-template-columns:1fr}
+  .steps li{border-right:0!important;border-bottom:1px solid rgba(79,70,229,.1)!important}
+  .steps li:last-child{border-bottom:0!important}
+  .exp-card{padding:32px 24px}
+  .hero-stat{padding:12px 16px}
+}
+@media(max-width:600px){
+  .hero-name{font-size:34px}
+  .photo-wrap{width:260px;height:260px}
+  .photo-img{width:200px;height:200px}
+  .lets-talk{font-size:38px}
+  footer{flex-direction:column;gap:12px;text-align:center}
+}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}html{scroll-behavior:auto}}
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader" aria-hidden="true">
+  <div class="pre-pct" id="pct-num">0%</div>
+  <div class="pre-bar-wrap"><div class="pre-bar" id="pre-bar"></div></div>
+  <div class="pre-label">Loading Portfolio</div>
+</div>
+<div class="curtain" id="curtain" aria-hidden="true">
+  <div class="curtain-top"></div>
+  <div class="curtain-bot"></div>
+</div>
+
+<div id="scroll-bar"></div>
+<canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+<!-- NAV -->
+<nav id="navbar" aria-label="Main">
+  <a class="nav-logo" href="#hero">VSS Nagineni</a>
+  <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#focus">Focus</a></li>
+    <li><a href="#thesis">Thesis</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-watermark" id="watermark" aria-hidden="true">ENGINEER</div>
+  <div class="hero-left">
+    <div class="hero-eyebrow">Mechanical &amp; Materials R&amp;D Engineer &middot; Copenhagen</div>
+    <h1 class="hero-name" aria-label="Venkata Santosh Saran Nagineni">
+      <span id="line1" aria-hidden="true">VENKATA SANTOSH</span><br>
+      <span class="hero-name-line2" id="line2" aria-hidden="true">SARAN NAGINENI</span>
+    </h1>
+    <p class="hero-value reveal">
+      Mechanical engineer and metallurgist working on <strong>highly loaded metal parts</strong>. I take parts and materials from the first DOE through <span class="hl">additive manufacturing, heat treatment, mechanical testing and failure analysis</span> to production readiness. MSc at TU Bergakademie Freiberg, thesis at DTU with Norsk Hydro.
+    </p>
+    <div class="hero-ctas reveal d1">
+      <a href="#projects" class="btn-primary" id="mag-btn">View Projects &rarr;</a>
+      <a href="#contact" class="btn-secondary">Get in Touch &#8599;</a>
+    </div>
+    <div class="hero-stats reveal d2">
+      <div class="hero-stat"><div class="stat-num"><span class="cnt" data-t="18">18</span></div><div class="stat-label">Months AM R&amp;D</div></div>
+      <div class="hero-stat"><div class="stat-num"><span class="cnt" data-t="5">5</span></div><div class="stat-label">Organisations</div></div>
+      <div class="hero-stat"><div class="stat-num"><span class="cnt" data-t="3">3</span></div><div class="stat-label">Countries Worked In</div></div>
+      <div class="hero-stat"><div class="stat-num"><span class="cnt" data-t="5">5</span></div><div class="stat-label">Alloy Families</div></div>
+    </div>
+  </div>
+  <div class="hero-right reveal d3" id="photo-tilt">
+    <div class="photo-wrap">
+      <div class="photo-glow"></div>
+      <div class="photo-ring"></div>
+      <img class="photo-img" src="assets/profile.jpg" width="260" height="260" alt="Portrait of Venkata Santosh Saran Nagineni">
+      <div class="photo-orbit" aria-hidden="true">
+        <div class="orbit-dot"></div>
+        <div class="orbit-dot"></div>
+        <div class="orbit-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE 1 -->
+<div class="mq-section" aria-hidden="true">
+  <div class="mq-inner">
+    <div class="mq-track fill">
+      <span class="mq-item">SLM / LPBF</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Mechanical Testing</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Design of Experiments</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Failure Analysis</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Inconel 718</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Maraging Steel</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Heat Treatment</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Materials Characterisation</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">SLM / LPBF</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Mechanical Testing</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Design of Experiments</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Failure Analysis</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Inconel 718</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Maraging Steel</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Heat Treatment</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Materials Characterisation</span><span class="mq-sep">&#9670;</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <div class="sec-eyebrow">About Me</div>
+    <h2 class="sec-title">An engineer who wants<br>to know <span class="g it">why things fail</span></h2>
+  </div>
+  <div class="about-grid">
+    <div class="quote-card reveal">
+      <span class="qmark" aria-hidden="true">&#8220;</span>
+      <p class="qtext">I like taking a part that has to carry real load, finding out what limits it, and changing the process, the material or the design until it holds. When something breaks, I want to see the fracture, the microstructure and the data before I decide what to change.</p>
+      <dl class="facts">
+        <dt>Based</dt><dd>Copenhagen, Denmark</dd>
+        <dt>Now</dt><dd>Master's thesis researcher, DTU Construct</dd>
+        <dt>Degrees</dt><dd>BTech Mechanical Engineering &middot; MSc Metallic Materials Technology</dd>
+        <dt>Languages</dt><dd>English C1 &middot; German A2 (improving)</dd>
+      </dl>
+    </div>
+    <div class="about-r reveal d1">
+      <p>I am <strong>Venkata Santosh Saran Nagineni</strong>. I studied mechanical engineering in India, worked as a graduate trainee engineer at Bharat Petroleum, and then moved to Germany for an <strong>MSc in Metallic Materials Technology at TU Bergakademie Freiberg</strong>, specialising in iron and steel technology and in foundry and casting technology.</p>
+      <p>Since then I have worked on metal parts in very different settings: a casting and materials research institute in Germany, the additive manufacturing team at <strong>The LEGO Group</strong>, a part-time role at <strong>Fraunhofer</strong>, and <strong>DTU Construct's Additive Manufacturing Lab</strong>, where my thesis with <strong>Norsk Hydro ASA</strong> develops 3D-printed IN718 die inserts that run at around 550&nbsp;&deg;C.</p>
+      <p>I am looking for full-time R&amp;D roles in mechanical design, materials, additive manufacturing and testing, in Denmark and across Europe.</p>
+    </div>
+  </div>
+  <div class="stat-band reveal d2">
+    <div class="stat-cell"><div class="sn"><span class="cnt" data-t="18">18</span></div><span class="sl">Months AM R&amp;D</span></div>
+    <div class="stat-cell"><div class="sn"><span class="cnt" data-t="10">10</span>+</div><span class="sl">Characterisation Methods</span></div>
+    <div class="stat-cell"><div class="sn"><span class="cnt" data-t="3">3</span></div><span class="sl">Industry Partners</span></div>
+    <div class="stat-cell"><div class="sn"><span class="cnt" data-t="4">4</span></div><span class="sl">CAD Platforms</span></div>
+  </div>
+</section>
+
+<!-- FOCUS AREAS -->
+<section id="focus">
+  <div class="reveal">
+    <div class="sec-eyebrow">Areas of Interest</div>
+    <h2 class="sec-title">What I like to <span class="g">work on</span></h2>
+    <p class="sec-lede">Six themes run through everything I have done so far.</p>
+  </div>
+  <div class="focus-grid">
+    <div class="focus-card reveal"><span class="focus-tag">Manufacturing</span><h3>Metal additive manufacturing</h3><p>LPBF process windows, build layout, multi-laser production and design for AM, with the aim of making printed parts production-ready.</p></div>
+    <div class="focus-card reveal d1"><span class="focus-tag">Reliability</span><h3>Fatigue &amp; mechanical testing</h3><p>Static tensile, hardness and low cycle fatigue, specimen design to ISO and ASTM standards, and test data I can defend.</p></div>
+    <div class="focus-card reveal d2"><span class="focus-tag">Root cause</span><h3>Failure analysis</h3><p>Tracing failures back to porosity, phases or loading with SEM, EDS, EBSD, XRD and micro-CT, then turning the answer into a procedure.</p></div>
+    <div class="focus-card reveal"><span class="focus-tag">Metallurgy</span><h3>Heat treatment design</h3><p>Choosing temperatures and cooling to control &gamma;&Prime;, &delta; and Laves phases and recrystallisation in nickel superalloys and steels.</p></div>
+    <div class="focus-card reveal d1"><span class="focus-tag">Materials</span><h3>Materials selection</h3><p>Steels, maraging steels, nickel superalloys and titanium for highly loaded, lightweight and high-temperature parts.</p></div>
+    <div class="focus-card reveal d2"><span class="focus-tag">Sustainability</span><h3>Cost &amp; resource efficiency</h3><p>Lower unit cost, cobalt-free alloys, powder reuse and scrap metal recycling. Good engineering should also use less.</p></div>
+  </div>
+</section>
+
+<!-- MARQUEE 2 -->
+<div class="mq-section" aria-hidden="true">
+  <div class="mq-inner rev">
+    <div class="mq-track outline">
+      <span class="mq-item">XRD Analysis</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">SEM / EBSD</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Fatigue Modelling</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">micro-CT</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">DfAM</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Tensile Testing</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Superalloy Processing</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">von Mises Stress</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">XRD Analysis</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">SEM / EBSD</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Fatigue Modelling</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">micro-CT</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">DfAM</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Tensile Testing</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">Superalloy Processing</span><span class="mq-sep">&#9670;</span>
+      <span class="mq-item">von Mises Stress</span><span class="mq-sep">&#9670;</span>
+    </div>
+  </div>
+</div>
+
+<!-- THESIS CASE STUDY -->
+<section id="thesis">
+  <div class="reveal">
+    <div class="sec-eyebrow">Featured Case Study</div>
+    <h2 class="sec-title">3D-printed IN718 die inserts<br>for <span class="g">aluminium extrusion</span></h2>
+    <p class="sec-lede">My master's thesis, from print parameters to tested parts.</p>
+  </div>
+  <article class="case reveal">
+    <div class="case-top">
+      <div>
+        <div class="case-org">DTU Construct &times; Norsk Hydro ASA &middot; Apr &ndash; Oct 2026</div>
+        <h3>Can a new heat treatment make printed die inserts last longer?</h3>
+        <p>Norsk Hydro extrudes aluminium precision tubes through small die inserts that work under high pressure at around 450&ndash;550&nbsp;&deg;C. The inserts are printed in Inconel 718 by laser powder bed fusion. I set out to find print parameters and a heat treatment route that give the right balance of strength and ductility at service temperature.</p>
+        <p>I ran the work end to end: experimental design, furnace campaigns in Denmark and Italy, characterisation, specimen design, mechanical testing and recommendations back to Hydro.</p>
+      </div>
+      <dl class="spec">
+        <dt>Material</dt><dd>Inconel 718, gas-atomised powder (15&ndash;53&nbsp;&micro;m)</dd>
+        <dt>Process</dt><dd>Laser powder bed fusion, wire EDM, heat treatment</dd>
+        <dt>Standards</dt><dd>ISO 6892-1, ISO 12106, ASTM E606, ASTM F3055, ISO 2768</dd>
+        <dt>Instruments</dt><dd>ZEISS Sigma 300 FE-SEM with EDS/EBSD, Bruker D8 XRD, Struers DuraScan, MTS load frame</dd>
+        <dt>Partners</dt><dd>Norsk Hydro, Politecnico di Torino, TU Bergakademie Freiberg</dd>
+      </dl>
+    </div>
+    <figure class="cycle">
+      <svg viewBox="0 0 640 230" role="img" aria-label="Schematic thermal cycle of the new route: homogenisation at 1130 °C, solutionising at 965 °C, then ageing at 720 °C and 620 °C for 8 hours each">
+        <defs><linearGradient id="cg" x1="0" x2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset=".5" stop-color="#2563eb"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs>
+        <g font-family="Sora, sans-serif" font-size="11" fill="rgba(14,19,48,.5)">
+          <line x1="60" y1="196" x2="630" y2="196" stroke="rgba(79,70,229,.2)"/>
+          <line x1="60" y1="20" x2="60" y2="196" stroke="rgba(79,70,229,.2)"/>
+          <g stroke="rgba(79,70,229,.14)" stroke-dasharray="3 5"><line x1="60" y1="40" x2="630" y2="40"/><line x1="60" y1="78" x2="630" y2="78"/><line x1="60" y1="110" x2="630" y2="110"/><line x1="60" y1="132" x2="630" y2="132"/></g>
+          <text x="52" y="44" text-anchor="end">1130 &#176;C</text><text x="52" y="82" text-anchor="end">965 &#176;C</text><text x="52" y="114" text-anchor="end">720 &#176;C</text><text x="52" y="136" text-anchor="end">620 &#176;C</text>
+          <text x="345" y="222" text-anchor="middle">time (schematic, not to scale)</text>
+        </g>
+        <polyline fill="none" stroke="url(#cg)" stroke-width="3" stroke-linejoin="round" points="60,196 100,40 175,40 196,196 230,196 262,78 318,78 336,196 372,196 396,110 466,110 494,132 572,132 594,196"/>
+        <g font-family="Sora, sans-serif" font-size="12" font-weight="700" fill="#0e1330" text-anchor="middle">
+          <text x="138" y="32">Homogenise</text><text x="290" y="70">Solutionise</text><text x="431" y="102">Age 8 h</text><text x="533" y="124">Age 8 h</text>
+        </g>
+        <g fill="#c026d3"><circle cx="100" cy="40" r="4"/><circle cx="262" cy="78" r="4"/><circle cx="396" cy="110" r="4"/><circle cx="494" cy="132" r="4"/></g>
+      </svg>
+      <figcaption>The heat treatment route developed in the thesis for LPBF IN718.</figcaption>
+    </figure>
+    <ol class="steps">
+      <li><span class="step-n">01 &middot; Parameter DOE</span><h4>Found the process window</h4><p>20-cube energy density study from 50 to 120 J/mm&sup3;. The optimum near 80 J/mm&sup3; reached 99.77&nbsp;% relative density.</p></li>
+      <li><span class="step-n">02 &middot; Build</span><h4>Printed test blocks</h4><p>Printed solid blocks with the selected parameters and extracted specimen blanks by wire EDM.</p></li>
+      <li><span class="step-n">03 &middot; Heat treatment</span><h4>2&times;2 route matrix</h4><p>Varied homogenisation temperature and the solutionising step across furnaces at DTU and Politecnico di Torino, and wrote the furnace SOP.</p></li>
+      <li><span class="step-n">04 &middot; Characterise</span><h4>Linked process to microstructure</h4><p>Hardness mapping, SEM/BSE, EDS, EBSD and XRD to measure &delta;, &gamma;&Prime;, Laves, carbides and recrystallisation.</p></li>
+      <li><span class="step-n">05 &middot; Test</span><h4>Tensile at RT and 550&nbsp;&deg;C</h4><p>Drew the tensile specimen (&Oslash;6&nbsp;mm gauge, Ra 0.4) and ran strain-controlled tests. Low cycle fatigue is the planned next stage.</p></li>
+      <li><span class="step-n">06 &middot; Recommend</span><h4>Advised the industrial partner</h4><p>Ranked the routes on strength and ductility and delivered process recommendations to Hydro. Results are being prepared for publication.</p></li>
+    </ol>
+  </article>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="reveal">
+    <div class="sec-eyebrow">Professional Experience</div>
+    <h2 class="sec-title">Where I have made<br><span class="g">measurable impact</span></h2>
+  </div>
+  <div class="exp-stack" style="margin-top:40px">
+
+    <div class="exp-card reveal">
+      <div class="exp-bg-num" aria-hidden="true">01</div>
+      <div class="exp-top"><div class="exp-date">Apr 2026 &ndash; Present</div></div>
+      <h3 class="exp-role">Master&rsquo;s Thesis Researcher</h3>
+      <div class="exp-company">DTU Construct, Additive Manufacturing Lab &times; Norsk Hydro ASA</div>
+      <div class="exp-loc">Kgs. Lyngby, Denmark</div>
+      <div class="exp-thesis">Thesis: Laser powder bed fusion of IN718 for high-performance aluminium extrusion die inserts</div>
+      <ul class="exp-bullets">
+        <li>Ran a <strong>20-cube energy density DOE</strong> to set LPBF parameters, reaching 99.77&nbsp;% relative density at the optimum.</li>
+        <li>Designed a <strong>2&times;2 heat treatment matrix</strong> run at DTU and Politecnico di Torino, developed a new multi-stage route and wrote its <strong>standard operating procedure</strong>.</li>
+        <li>Characterised four thermal histories by <strong>SEM/BSE, EDS, EBSD, XRD and hardness mapping</strong>, quantifying &gamma;&Prime;, &delta;, Laves and (Nb,&nbsp;Ti)C and recrystallisation.</li>
+        <li>Designed tensile specimens and ran <strong>static tensile tests at room temperature and 550&nbsp;&deg;C</strong>; low cycle fatigue to ISO 12106 / ASTM E606 is planned next.</li>
+        <li>Delivered <strong>process recommendations to Norsk Hydro</strong>; results are being prepared for publication.</li>
+      </ul>
+      <div class="exp-tags">
+        <span class="exp-tag">LPBF</span><span class="exp-tag">IN718</span><span class="exp-tag">Heat Treatment</span><span class="exp-tag">SEM / EBSD / XRD</span><span class="exp-tag">Tensile Testing</span><span class="exp-tag">Die Tooling</span>
+      </div>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-bg-num" aria-hidden="true">02</div>
+      <div class="exp-top"><div class="exp-date">2026 &middot; Part-time</div></div>
+      <h3 class="exp-role">Student Research Assistant</h3>
+      <div class="exp-company">Fraunhofer</div>
+      <div class="exp-loc">Germany</div>
+      <ul class="exp-bullets">
+        <li>Built <strong>cost models for a compressor impeller</strong>, comparing directed energy deposition (DED) near-net shape with full milling and subtractive routes.</li>
+        <li>Covered <strong>Ti-6Al-4V and 17-4PH stainless steel</strong>, checked the calculations for consistency and wrote the methodology notes.</li>
+      </ul>
+      <div class="exp-tags">
+        <span class="exp-tag">DED / WAAM</span><span class="exp-tag">Cost Modelling</span><span class="exp-tag">Ti-6Al-4V</span><span class="exp-tag">17-4PH</span>
+      </div>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-bg-num" aria-hidden="true">03</div>
+      <div class="exp-top"><div class="exp-date">Aug 2025 &ndash; Jan 2026</div></div>
+      <h3 class="exp-role">Additive Design &amp; Manufacturing Intern</h3>
+      <div class="exp-company">The LEGO Group</div>
+      <div class="exp-loc">Billund, Denmark</div>
+      <ul class="exp-bullets">
+        <li><strong>Cut unit cost</strong> by qualifying an increased LPBF layer thickness for maraging steel parts, linking layer thickness and contour strategy to part quality and cycle time through structured DOE.</li>
+        <li>Designed a <strong>multi-sample test geometry</strong> for layer thickness qualification and measured Ra/Sa by Sensofar profilometry.</li>
+        <li>Qualified <strong>Sandvik Osprey MAR 50</strong>, a cobalt-free maraging steel replacing 18Ni300, through multi-factor DOE on processability, porosity and mechanical performance.</li>
+        <li>Measured how <strong>powder reuse</strong> degrades feedstock quality using CAMSIZER particle sizing, metallography and oxidation assessment.</li>
+        <li>Led the <strong>failure analysis and root-cause investigation</strong> of lamella structures in industrial 3D printers, and set up the SOP and cost calculations.</li>
+        <li>Optimised build layout for <strong>dual-insert multi-laser printing</strong>, and built <strong>fatigue life and von Mises stress models</strong> for printer spring mechanisms.</li>
+      </ul>
+      <div class="exp-tags">
+        <span class="exp-tag">DOE</span><span class="exp-tag">Maraging Steel</span><span class="exp-tag">Failure Analysis</span><span class="exp-tag">Powder QC</span><span class="exp-tag">Multi-laser AM</span><span class="exp-tag">Fatigue</span>
+      </div>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-bg-num" aria-hidden="true">04</div>
+      <div class="exp-top"><div class="exp-date">Jan 2025 &ndash; Jun 2025</div></div>
+      <h3 class="exp-role">Research &amp; Development Intern</h3>
+      <div class="exp-company">FEM Forschungsinstitut Edelmetalle + Metallchemie</div>
+      <div class="exp-loc">Schw&auml;bisch Gm&uuml;nd, Germany</div>
+      <ul class="exp-bullets">
+        <li>Assessed <strong>FFF-printed ceramic crucibles and moulds</strong> in stainless steel melting and casting trials, evaluating thermal durability, melt&ndash;mould interaction and cast quality.</li>
+        <li>Applied <strong>MatCalc thermodynamic modelling</strong> to interpret phase stability of the cast stainless steel.</li>
+        <li>Led a study on <strong>thermal hydrogen treatment of SLM titanium</strong>, linking microstructural refinement to fatigue and wear, with phases and defects quantified by SEM, XRD, XPS, micro-CT and DSC.</li>
+      </ul>
+      <div class="exp-tags">
+        <span class="exp-tag">Titanium AM</span><span class="exp-tag">Ceramic FFF</span><span class="exp-tag">Casting</span><span class="exp-tag">MatCalc</span><span class="exp-tag">XPS</span><span class="exp-tag">micro-CT</span>
+      </div>
+    </div>
+
+    <div class="exp-card reveal">
+      <div class="exp-bg-num" aria-hidden="true">05</div>
+      <div class="exp-top"><div class="exp-date">Apr 2021 &ndash; Mar 2022</div></div>
+      <h3 class="exp-role">Graduate Trainee Engineer</h3>
+      <div class="exp-company">Bharat Petroleum Corporation Limited (BPCL)</div>
+      <div class="exp-loc">Nellore, India</div>
+      <ul class="exp-bullets">
+        <li>Recovered <strong>scrap steel and cast iron</strong> from decommissioned machinery and damaged goods and routed it into recycled products, including structural steel for retail outlet high masts.</li>
+        <li>Evaluated <strong>metallic materials for pipelines and refinery equipment</strong>, covering steel grade selection, corrosion behaviour and code-based structural integrity.</li>
+        <li>Used <strong>SAP MM</strong> for procurement, inventory control and logistics.</li>
+      </ul>
+      <div class="exp-tags">
+        <span class="exp-tag">Materials Selection</span><span class="exp-tag">Recycling</span><span class="exp-tag">Pipeline Integrity</span><span class="exp-tag">SAP MM</span>
+      </div>
+    </div>
+
+  </div>
+  <p class="exp-other reveal">Alongside my studies I also worked as a warehouse associate at Amazon Germany (Gera, 2020; Lampertswalde, 2023&ndash;24).</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="reveal">
+    <div class="sec-eyebrow">Project Archive</div>
+    <h2 class="sec-title">Projects by <span class="g">type of work</span></h2>
+    <p class="sec-lede">Filter to see the projects behind each skill.</p>
+  </div>
+  <div class="filters reveal" role="group" aria-label="Filter projects">
+    <button type="button" data-f="all" aria-pressed="true">All</button>
+    <button type="button" data-f="am" aria-pressed="false">Additive Manufacturing</button>
+    <button type="button" data-f="test" aria-pressed="false">Testing &amp; Failure</button>
+    <button type="button" data-f="design" aria-pressed="false">Design &amp; Modelling</button>
+    <button type="button" data-f="cast" aria-pressed="false">Casting &amp; Materials</button>
+    <button type="button" data-f="cost" aria-pressed="false">Cost &amp; Sustainability</button>
+  </div>
+  <div class="proj-grid" id="proj-grid">
+    <article class="proj" data-tags="am test cast">
+      <div class="proj-org">DTU &times; Norsk Hydro &middot; 2026</div>
+      <h3>New heat treatment route for printed IN718</h3>
+      <p>2&times;2 matrix on homogenisation temperature and solutionising, linked to phases, recrystallisation and tensile behaviour at RT and 550&nbsp;&deg;C.</p>
+      <div class="exp-tags"><span class="exp-tag">IN718</span><span class="exp-tag">Heat Treatment</span></div>
+    </article>
+    <article class="proj" data-tags="am test">
+      <div class="proj-org">DTU &times; Norsk Hydro &middot; 2026</div>
+      <h3>LPBF process window and porosity</h3>
+      <p>20-cube energy density DOE with Archimedes density and image-based porosity analysis to select the build parameters.</p>
+      <div class="exp-tags"><span class="exp-tag">DOE</span><span class="exp-tag">Porosity</span></div>
+    </article>
+    <article class="proj" data-tags="am cost">
+      <div class="proj-org">The LEGO Group &middot; 2025&ndash;26</div>
+      <h3>Thicker layers, lower unit cost</h3>
+      <p>Qualified an increased LPBF layer thickness for maraging steel parts and optimised dual-insert, multi-laser build layout.</p>
+      <div class="exp-tags"><span class="exp-tag">LPBF</span><span class="exp-tag">Cost</span></div>
+    </article>
+    <article class="proj" data-tags="am test design">
+      <div class="proj-org">The LEGO Group &middot; 2025&ndash;26</div>
+      <h3>Layer thickness test geometry</h3>
+      <p>Designed a multi-sample geometry so one build could qualify several conditions, with Ra/Sa measured by Sensofar profilometry.</p>
+      <div class="exp-tags"><span class="exp-tag">Test Design</span><span class="exp-tag">Metrology</span></div>
+    </article>
+    <article class="proj" data-tags="am cast cost">
+      <div class="proj-org">The LEGO Group &middot; 2025&ndash;26</div>
+      <h3>Cobalt-free maraging steel</h3>
+      <p>Qualified Sandvik Osprey MAR 50 (Fe&ndash;9.5Ni&ndash;4.5Mo) to replace 18Ni300 in production, with DOE on processability, porosity and properties.</p>
+      <div class="exp-tags"><span class="exp-tag">Qualification</span><span class="exp-tag">Production</span></div>
+    </article>
+    <article class="proj" data-tags="am test cost">
+      <div class="proj-org">The LEGO Group &middot; 2025&ndash;26</div>
+      <h3>Powder reuse and part quality</h3>
+      <p>Measured how repeated reuse degrades maraging steel powder (CAMSIZER, metallography, oxidation) and linked it to part quality.</p>
+      <div class="exp-tags"><span class="exp-tag">Feedstock</span><span class="exp-tag">Quality</span></div>
+    </article>
+    <article class="proj" data-tags="test">
+      <div class="proj-org">The LEGO Group &middot; 2025&ndash;26</div>
+      <h3>Printer lamella failure analysis</h3>
+      <p>Led the root-cause investigation of lamella structures failing in industrial 3D printers, then wrote the SOP and cost calculations.</p>
+      <div class="exp-tags"><span class="exp-tag">Root Cause</span><span class="exp-tag">SOP</span></div>
+    </article>
+    <article class="proj" data-tags="design test">
+      <div class="proj-org">The LEGO Group &middot; 2025&ndash;26</div>
+      <h3>Spring mechanism fatigue models</h3>
+      <p>Fatigue life and von Mises stress models for printer spring systems, plus thermal test artefacts and DOE studies for polymer AM.</p>
+      <div class="exp-tags"><span class="exp-tag">Fatigue</span><span class="exp-tag">Stress Analysis</span></div>
+    </article>
+    <article class="proj" data-tags="design cost am">
+      <div class="proj-org">Fraunhofer &middot; 2026</div>
+      <h3>DED vs machining cost model</h3>
+      <p>Cost comparison of DED near-net shape, full milling and subtractive routes for a compressor impeller in Ti-6Al-4V and 17-4PH.</p>
+      <div class="exp-tags"><span class="exp-tag">DED</span><span class="exp-tag">Cost Modelling</span></div>
+    </article>
+    <article class="proj" data-tags="cast am">
+      <div class="proj-org">FEM Forschungsinstitut &middot; 2025</div>
+      <h3>3D-printed ceramic moulds &amp; crucibles</h3>
+      <p>Tested FFF-printed ceramic crucibles and moulds in stainless steel casting trials for durability, melt&ndash;mould interaction and cast quality.</p>
+      <div class="exp-tags"><span class="exp-tag">Ceramic FFF</span><span class="exp-tag">Casting</span></div>
+    </article>
+    <article class="proj" data-tags="test am">
+      <div class="proj-org">FEM Forschungsinstitut &middot; 2025</div>
+      <h3>Hydrogen treatment of printed titanium</h3>
+      <p>Thermal hydrogen treatment of SLM titanium, linking microstructural refinement to fatigue and wear, using SEM, XRD, XPS, micro-CT and DSC.</p>
+      <div class="exp-tags"><span class="exp-tag">Titanium</span><span class="exp-tag">Fatigue &amp; Wear</span></div>
+    </article>
+    <article class="proj" data-tags="cast cost">
+      <div class="proj-org">BPCL &middot; 2021&ndash;22</div>
+      <h3>Scrap metal into structural steel</h3>
+      <p>Recovered steel and cast iron from decommissioned machinery into recycled products, including structural steel for high masts.</p>
+      <div class="exp-tags"><span class="exp-tag">Recycling</span><span class="exp-tag">Steel</span></div>
+    </article>
+  </div>
+  <p class="proj-empty" id="proj-empty" hidden>No projects in this category.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="reveal">
+    <div class="sec-eyebrow">Technical Skills</div>
+    <h2 class="sec-title">Capabilities built at<br><span class="g">industry and research scale</span></h2>
+  </div>
+  <div class="skills-grid" style="margin-top:40px">
+    <div class="skill-card reveal" data-sk>
+      <div class="sk-glow"></div>
+      <div class="sk-num">01 &middot; AM Processes</div>
+      <h3 class="sk-title">Additive Manufacturing</h3>
+      <div class="sk-tags">
+        <span class="sk-tag">SLM / LPBF</span><span class="sk-tag">FFF Polymer &amp; Ceramic</span>
+        <span class="sk-tag">Multi-laser Systems</span><span class="sk-tag">Build Layout Strategy</span>
+        <span class="sk-tag">Parameter Optimisation</span><span class="sk-tag">Powder Feedstock QC</span>
+        <span class="sk-tag">DED Cost Modelling</span><span class="sk-tag">DOE</span><span class="sk-tag">DfAM</span>
+      </div>
+    </div>
+    <div class="skill-card reveal d1" data-sk>
+      <div class="sk-glow"></div>
+      <div class="sk-num">02 &middot; Characterisation</div>
+      <h3 class="sk-title">Materials Analysis</h3>
+      <div class="sk-tags">
+        <span class="sk-tag">SEM / BSE / EDS</span><span class="sk-tag">EBSD</span><span class="sk-tag">XRD (Bruker D8)</span>
+        <span class="sk-tag">XPS</span><span class="sk-tag">micro-CT</span><span class="sk-tag">DSC</span>
+        <span class="sk-tag">Optical Microscopy</span><span class="sk-tag">Sensofar Profilometry</span>
+        <span class="sk-tag">CAMSIZER</span><span class="sk-tag">GOM 3D Scanning</span><span class="sk-tag">ImageJ</span>
+      </div>
+    </div>
+    <div class="skill-card reveal d2" data-sk>
+      <div class="sk-glow"></div>
+      <div class="sk-num">03 &middot; Mechanical</div>
+      <h3 class="sk-title">Testing &amp; Failure Analysis</h3>
+      <div class="sk-tags">
+        <span class="sk-tag">Tensile Testing (RT &amp; 550 &deg;C)</span><span class="sk-tag">LCF (ISO 12106 / ASTM E606)</span>
+        <span class="sk-tag">Vickers Hardness</span><span class="sk-tag">Archimedes Density</span>
+        <span class="sk-tag">Porosity Quantification</span><span class="sk-tag">Specimen Design</span>
+        <span class="sk-tag">Root-cause Analysis</span><span class="sk-tag">Fatigue Modelling</span><span class="sk-tag">von Mises Stress</span>
+      </div>
+    </div>
+    <div class="skill-card reveal d3" data-sk>
+      <div class="sk-glow"></div>
+      <div class="sk-num">04 &middot; Metallurgy</div>
+      <h3 class="sk-title">Heat Treatment &amp; Casting</h3>
+      <div class="sk-tags">
+        <span class="sk-tag">Heat Treatment Route Design</span><span class="sk-tag">Controlled Atmosphere</span>
+        <span class="sk-tag">Furnace SOPs</span><span class="sk-tag">Alloy Melting &amp; Casting</span>
+        <span class="sk-tag">Investment Casting</span><span class="sk-tag">Superalloy Metallurgy</span>
+      </div>
+    </div>
+    <div class="skill-card reveal" data-sk>
+      <div class="sk-glow"></div>
+      <div class="sk-num">05 &middot; Simulation</div>
+      <h3 class="sk-title">Modelling &amp; Simulation</h3>
+      <div class="sk-tags">
+        <span class="sk-tag">MatCalc</span><span class="sk-tag">MAGMASOFT</span><span class="sk-tag">Flow-3D</span>
+        <span class="sk-tag">HyperMesh FEM</span><span class="sk-tag">Cost Modelling</span>
+      </div>
+    </div>
+    <div class="skill-card reveal d1" data-sk>
+      <div class="sk-glow"></div>
+      <div class="sk-num">06 &middot; Software &amp; CAD</div>
+      <h3 class="sk-title">Design &amp; Data Tools</h3>
+      <div class="sk-tags">
+        <span class="sk-tag">SolidWorks</span><span class="sk-tag">CATIA V5</span><span class="sk-tag">Siemens NX</span>
+        <span class="sk-tag">Fusion 360</span><span class="sk-tag">Python (matplotlib)</span><span class="sk-tag">OriginLab</span>
+        <span class="sk-tag">SAP MM</span><span class="sk-tag">MS Office</span>
+      </div>
+    </div>
+  </div>
+  <div class="tools-mq reveal" aria-hidden="true">
+    <div class="tools-track">
+      <div class="tool-pill">SEM</div><div class="tool-pill">EBSD</div><div class="tool-pill">XRD</div>
+      <div class="tool-pill">XPS</div><div class="tool-pill">micro-CT</div><div class="tool-pill">LPBF</div>
+      <div class="tool-pill">SolidWorks</div><div class="tool-pill">CATIA V5</div><div class="tool-pill">Siemens NX</div>
+      <div class="tool-pill">MatCalc</div><div class="tool-pill">MAGMASOFT</div><div class="tool-pill">Python</div>
+      <div class="tool-pill">OriginLab</div><div class="tool-pill">CAMSIZER</div><div class="tool-pill">Profilometry</div>
+      <div class="tool-pill">SEM</div><div class="tool-pill">EBSD</div><div class="tool-pill">XRD</div>
+      <div class="tool-pill">XPS</div><div class="tool-pill">micro-CT</div><div class="tool-pill">LPBF</div>
+      <div class="tool-pill">SolidWorks</div><div class="tool-pill">CATIA V5</div><div class="tool-pill">Siemens NX</div>
+      <div class="tool-pill">MatCalc</div><div class="tool-pill">MAGMASOFT</div><div class="tool-pill">Python</div>
+      <div class="tool-pill">OriginLab</div><div class="tool-pill">CAMSIZER</div><div class="tool-pill">Profilometry</div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="reveal">
+    <div class="sec-eyebrow">Education</div>
+    <h2 class="sec-title">Academic <span class="g">foundations</span></h2>
+  </div>
+  <div class="edu-list">
+    <div class="edu-row reveal">
+      <div class="edu-yr">2022 &ndash; 2026</div>
+      <div>
+        <h3 class="edu-deg">MSc &mdash; Metallic Materials Technology</h3>
+        <div class="edu-inst">Technische Universit&auml;t Bergakademie Freiberg, Germany</div>
+        <div class="edu-mods">Main specialisation: Iron and Steel Technology &middot; Second specialisation: Foundry and Casting Technology<br>Additive Manufacturing &middot; Materials Characterisation &middot; Solidification and Casting Simulation &middot; Thermodynamics of Metallic Systems &middot; Physical Metallurgy</div>
+      </div>
+      <div class="edu-badge">MSc</div>
+    </div>
+    <div class="edu-row reveal d1">
+      <div class="edu-yr">2016 &ndash; 2020</div>
+      <div>
+        <h3 class="edu-deg">BTech &mdash; Mechanical Engineering</h3>
+        <div class="edu-inst">Kalasalingam Academy of Research and Education (KARE), India</div>
+        <div class="edu-mods">Structural Analysis &middot; Manufacturing Processes &middot; Metallurgy &amp; Materials Science &middot; Automotive Engineering &middot; Thermodynamics &amp; Fluid Mechanics</div>
+      </div>
+      <div class="edu-badge">BTech</div>
+    </div>
+  </div>
+</section>
+
+<!-- BEYOND -->
+<section id="beyond">
+  <div class="reveal">
+    <div class="sec-eyebrow">Outside Work</div>
+    <h2 class="sec-title">Beyond the <span class="g">lab</span></h2>
+  </div>
+  <div class="beyond-grid">
+    <div class="beyond-item reveal"><h4>Mechanical watches</h4><p>Small mechanisms, tight tolerances and materials that have to last for decades.</p></div>
+    <div class="beyond-item reveal d1"><h4>Strength training</h4><p>Regular gym training. Progressive loading is a familiar idea.</p></div>
+    <div class="beyond-item reveal d2"><h4>Football</h4><p>A keen follower of the game, including every FIFA World Cup.</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal">
+    <div class="sec-eyebrow" style="justify-content:center">Let&rsquo;s Connect</div>
+    <div class="lets-talk">LET&rsquo;S TALK</div>
+  </div>
+  <div class="contact-grid reveal d1">
+    <div class="contact-card">
+      <div class="cc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></div>
+      <div class="cc-type">Email</div>
+      <div class="cc-val"><a href="mailto:venkatasantoshsaran99@gmail.com">venkatasantoshsaran99@gmail.com</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+      <div class="cc-type">Phone</div>
+      <div class="cc-val"><a href="tel:+4917648064525">+49 176 48064525</a></div>
+    </div>
+    <div class="contact-card">
+      <div class="cc-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
+      <div class="cc-type">LinkedIn</div>
+      <div class="cc-val"><a href="https://www.linkedin.com/in/santoshsaran99/" target="_blank" rel="noopener">View Profile &rarr;</a></div>
+    </div>
+  </div>
+  <div class="reveal d2">
+    <div class="open-badge">
+      <div class="open-dot"></div>
+      Open to full-time R&amp;D roles in Denmark &amp; Europe &mdash; available from November 2026
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot-name">Venkata Santosh Saran Nagineni</div>
+  <div class="foot-note">Mechanical &amp; Materials R&amp;D Engineer &middot; Copenhagen &middot; &copy; <span id="yr">2026</span></div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+<script>
+(function(){
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+// == HERO NAME REVEAL ==
+function revealName(){
+  [['line1','VENKATA SANTOSH',0],['line2','SARAN NAGINENI',15]].forEach(function(row){
+    var el=document.getElementById(row[0]); el.textContent='';
+    var i=0;
+    row[1].split(' ').forEach(function(word,wi){
+      if(wi>0)el.appendChild(document.createTextNode(' '));
+      var w=document.createElement('span');w.className='hero-word';el.appendChild(w);
+      word.split('').forEach(function(c){
+        var s=document.createElement('span');s.className='hero-char';s.textContent=c;w.appendChild(s);
+        var d=reduce?0:100+(row[2]+i)*45;i++;
+        setTimeout(function(){s.classList.add('vis');},d);
+      });
+      i++;
+    });
+  });
+}
+
+// == REVEAL ==
+function initReveal(){
+  revealName();
+  var els=document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('vis');});return;}
+  var ob=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');ob.unobserve(e.target);}});
+  },{threshold:0.08});
+  els.forEach(function(el){ob.observe(el);});
+}
+
+// == PRELOADER (short, with fail-safe) ==
+var pre=document.getElementById('preloader'),curtain=document.getElementById('curtain');
+var done=false;
+function finish(){
+  if(done)return; done=true;
+  pre.style.transition='opacity .4s'; pre.style.opacity='0';
+  setTimeout(function(){pre.style.display='none';curtain.classList.add('open');setTimeout(function(){curtain.style.display='none';},1100);initReveal();},400);
+}
+if(reduce){pre.style.display='none';curtain.style.display='none';done=true;initReveal();}
+else{
+  var pct=document.getElementById('pct-num'),bar=document.getElementById('pre-bar'),n=0;
+  var iv=setInterval(function(){
+    n=Math.min(n+Math.random()*9+4,100);
+    pct.textContent=Math.floor(n)+'%'; bar.style.width=n+'%';
+    if(n>=100){clearInterval(iv);setTimeout(finish,150);}
+  },30);
+  setTimeout(finish,2500);
+}
+
+// == MOBILE NAV ==
+var tog=document.getElementById('nav-toggle'),links=document.getElementById('nav-links');
+tog.addEventListener('click',function(){var o=links.classList.toggle('open');tog.setAttribute('aria-expanded',String(o));tog.textContent=o?'Close':'Menu';});
+links.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){links.classList.remove('open');tog.setAttribute('aria-expanded','false');tog.textContent='Menu';});});
+
+// == SCROLL EFFECTS ==
+var sb=document.getElementById('scroll-bar'),nav=document.getElementById('navbar'),wm=document.getElementById('watermark');
+window.addEventListener('scroll',function(){
+  var s=window.scrollY,h=document.body.scrollHeight-window.innerHeight;
+  sb.style.width=(h>0?s/h*100:0)+'%';
+  nav.classList.toggle('scrolled',s>80);
+  if(wm&&!reduce) wm.style.transform='translateY(-50%) translateX('+(-(s*0.12))+'px)';
+},{passive:true});
+
+// == PROJECT FILTER ==
+var fbtns=document.querySelectorAll('.filters button'),cards=document.querySelectorAll('#proj-grid .proj'),empty=document.getElementById('proj-empty');
+fbtns.forEach(function(b){b.addEventListener('click',function(){
+  var f=b.getAttribute('data-f'),shown=0;
+  fbtns.forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+  cards.forEach(function(c){var on=f==='all'||c.getAttribute('data-tags').split(' ').indexOf(f)>-1;c.hidden=!on;if(on)shown++;});
+  empty.hidden=shown>0;
+});});
+
+var fine=window.matchMedia('(pointer:fine)').matches;
+if(fine&&!reduce){
+  // == MAGNETIC BUTTON ==
+  var mb=document.getElementById('mag-btn');
+  mb.addEventListener('mousemove',function(e){var r=mb.getBoundingClientRect();mb.style.transform='translate('+((e.clientX-r.left-r.width/2)*0.25)+'px,'+((e.clientY-r.top-r.height/2)*0.25)+'px)';});
+  mb.addEventListener('mouseleave',function(){mb.style.transform='';});
+  // == PHOTO TILT ==
+  var pt=document.getElementById('photo-tilt');
+  pt.addEventListener('mousemove',function(e){var r=pt.getBoundingClientRect();pt.style.transform='perspective(800px) rotateY('+((e.clientX-r.left-r.width/2)/r.width*20)+'deg) rotateX('+(-(e.clientY-r.top-r.height/2)/r.height*20)+'deg)';});
+  pt.addEventListener('mouseleave',function(){pt.style.transform='';});
+  // == SKILL CARD TILT ==
+  document.querySelectorAll('[data-sk]').forEach(function(card){
+    var glow=card.querySelector('.sk-glow');
+    card.addEventListener('mousemove',function(e){
+      var r=card.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+      card.style.transform='perspective(600px) rotateX('+((y-r.height/2)/r.height*12)+'deg) rotateY('+(-(x-r.width/2)/r.width*12)+'deg) translateY(-4px)';
+      if(glow){glow.style.left=x+'px';glow.style.top=y+'px';glow.style.opacity='1';}
+    });
+    card.addEventListener('mouseleave',function(){card.style.transform='';if(glow)glow.style.opacity='0';});
+  });
+}
+
+// == COUNTERS ==
+function animCount(el){
+  var target=parseInt(el.getAttribute('data-t'),10),start=performance.now();
+  (function tick(now){var t=Math.min((now-start)/1500,1);el.textContent=Math.round((1-Math.pow(1-t,3))*target);if(t<1)requestAnimationFrame(tick);else el.textContent=target;})(start);
+}
+if(!reduce&&'IntersectionObserver' in window){
+  var cob=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){animCount(e.target);cob.unobserve(e.target);}});},{threshold:0.5});
+  document.querySelectorAll('.cnt').forEach(function(el){cob.observe(el);});
+}
+
+// == THREE.JS BACKGROUND (desktop, motion allowed) ==
+window.addEventListener('load',function(){
+  if(reduce||typeof THREE==='undefined'||window.innerWidth<700)return;
+  try{
+    var canvas=document.getElementById('bg-canvas');
+    var renderer=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true});
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio,2));
+    renderer.setSize(window.innerWidth,window.innerHeight);
+    var scene=new THREE.Scene();
+    var camera=new THREE.PerspectiveCamera(60,window.innerWidth/window.innerHeight,0.1,100);
+    camera.position.z=8;
+    scene.add(new THREE.AmbientLight(0xffffff,0.5));
+    var key=new THREE.DirectionalLight(0xfff8e7,1.2);key.position.set(5,8,6);scene.add(key);
+    [[0x2563eb,2,-6,4,4],[0x7c3aed,1.8,6,-4,4],[0xc026d3,1.4,0,8,-4]].forEach(function(l){var p=new THREE.PointLight(l[0],l[1],18);p.position.set(l[2],l[3],l[4]);scene.add(p);});
+    var colors=[0xbae6fd,0xc4b5fd,0xfbcfe8,0xa5f3fc,0xddd6fe,0xe0f2fe];
+    var geos=[new THREE.TorusGeometry(1.4,0.45,18,80),new THREE.IcosahedronGeometry(1.1,1),new THREE.TorusKnotGeometry(0.9,0.28,120,18),new THREE.SphereGeometry(1.0,32,32),new THREE.SphereGeometry(0.65,24,24),new THREE.OctahedronGeometry(1.0,1),new THREE.SphereGeometry(0.45,20,20),new THREE.TorusGeometry(0.8,0.25,14,60)];
+    var pos=[[-6,4,-3],[5,3,-2],[-3,-4,-4],[4,-3,-3],[-5,-2,-2],[2,5,-4],[6,-5,-3],[-2,6,-3]];
+    var shapes=[];
+    geos.forEach(function(g,i){
+      var mesh=new THREE.Mesh(g,new THREE.MeshStandardMaterial({color:colors[i%colors.length],roughness:0.18,metalness:0.12}));
+      mesh.position.set(pos[i][0],pos[i][1],pos[i][2]);
+      mesh._by=pos[i][1];mesh._phase=Math.random()*Math.PI*2;mesh._rs=Math.random()*0.005+0.002;mesh._fs=Math.random()*0.4+0.3;
+      scene.add(mesh);shapes.push(mesh);
+    });
+    var pCount=260,pArr=new Float32Array(pCount*3);
+    for(var i=0;i<pCount*3;i++){pArr[i]=(Math.random()-0.5)*30;}
+    var pGeo=new THREE.BufferGeometry();pGeo.setAttribute('position',new THREE.BufferAttribute(pArr,3));
+    scene.add(new THREE.Points(pGeo,new THREE.PointsMaterial({size:0.045,color:0x7c3aed,transparent:true,opacity:0.3})));
+    var tmx=0,tmy=0,cmx=0,cmy=0,scrY=0,t=0;
+    document.addEventListener('mousemove',function(e){tmx=(e.clientX/window.innerWidth-0.5)*2;tmy=-(e.clientY/window.innerHeight-0.5)*2;});
+    window.addEventListener('scroll',function(){scrY=window.scrollY;},{passive:true});
+    window.addEventListener('resize',function(){camera.aspect=window.innerWidth/window.innerHeight;camera.updateProjectionMatrix();renderer.setSize(window.innerWidth,window.innerHeight);});
+    (function animate(){
+      requestAnimationFrame(animate);
+      if(document.hidden)return;
+      t+=0.016;cmx+=(tmx-cmx)*0.03;cmy+=(tmy-cmy)*0.03;
+      camera.position.x=cmx*1.5;camera.position.y=cmy*1.2-scrY*0.002;camera.lookAt(0,0,0);
+      shapes.forEach(function(m){m.rotation.x+=m._rs*0.7;m.rotation.y+=m._rs;m.position.y=m._by+Math.sin(t*m._fs+m._phase)*0.4;});
+      renderer.render(scene,camera);
+    })();
+  }catch(e){console.warn('3D background unavailable',e);}
+});
+})();
+</script>
+</body>
+</html>
